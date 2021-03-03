@@ -3,7 +3,7 @@ import "./styles.css";
 
 function Footer() {
   return (
-    <footer class="footer">
+    <footer class="footer clear-top text-center mt-5">
         <div class="container">
             <span class="text-muted">
                 <p>
