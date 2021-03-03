@@ -28,12 +28,6 @@ body{
     margin-left: 5%;
 }
 
-.intro{
-    max-width: 60%;
-    top: 50%;
-    font-size: 1.25em;
-
-}
 .blob-two{
     height: 400px;
     background-color: rgb(204,158,83);
@@ -41,7 +35,35 @@ body{
     margin-top: 30%;
     opacity: 80%;
 
+}    
+
+.blob-three{
+    height: 90%;
+    background-color:rgb(234,209,195);
+    border-radius: 24% 76% 27% 73% / 46% 64% 36% 54% ;
+    margin-top: 15% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
+
 }
+.blob-four{
+    height: 80%;
+    background-color:rgb(220,101,86);
+    border-radius: 44% 56% 56% 44% / 38% 68% 32% 62%;
+    margin-bottom: 30%;
+    opacity: 80%;
+
+}
+.intro{
+    max-width: 60%;
+    top: 50%;
+    font-size: 1.25em;
+
+}
+
 
 .blob-project{
     background-color: rgb(54,74,83);
@@ -53,29 +75,23 @@ body{
 .blob-project-inner{
     background-color: rgb(176,151,155);
     border-radius: 43% 57% 70% 30% / 47% 51% 49% 53%;
-    margin-right: 40px;
-    /* opacity: 80%; */
 
 }
 
 .project-details {
 background-color:transparent !important;
-border: 1px solid black;
-display: inline-block;
-
-
-
 }
-.project-image-container{
-    border: 1px solid black;
-    display: inline-block;
-    
 
+.projectImage{
+    height: 350px;
+    width: 350;
 }
+
 
 .card-container{
     background-color: transparent !important;
     margin-top: 100px;
+    
 }
 
 .card{
@@ -87,11 +103,6 @@ display: inline-block;
     width: 45px;
 }
 
-.logoContainer{
-    align-items: center;
-    margin: 15px auto;
-    border: 1px solid black;
-}
 
 .btn{
     box-shadow: 1px 1px ;

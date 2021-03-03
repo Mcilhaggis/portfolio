@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   document.title = "Rachael McIlhagga Portfolio";
@@ -20,7 +20,7 @@ const App = () => {
         <Wrapper>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
-          <Route exact path="/about" component={About} />
+          <Route exact path="/about" component={Contact} />
         </Wrapper>
         <Footer />
       </div>
