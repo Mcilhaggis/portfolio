@@ -3,7 +3,7 @@ body{
 }
 
 a {
-    color: black !important;
+    color: rgb(54,74,83) !important;
   }
 
 
@@ -131,8 +131,10 @@ background-color:transparent !important;
 }
 
 .projectImage{
-    height: 350px;
-    width: 350;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    /* border: 1px navy solid; */
 }
 
 
