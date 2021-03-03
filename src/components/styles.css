@@ -2,15 +2,15 @@ body{
     background-color: rgb(237,234,227) !important;
 }
 
+a {
+    color: black !important;
+  }
+
+
 .nav-link, .navbar-brand{
     color: black;
     margin-top: 30px;
 }
-
-/* .footer{
-    border-top: 1px solid black;
-    position: fixed;bottom: 0;
-} */
 
 .header-container{
     height: 100vh;
@@ -26,7 +26,26 @@ body{
     align-items: center;
     text-align: center;
     margin-left: 5%;
+    animation: morphOne 15s ease-in-out infinite;
+    transition: all 3s ease-in-out;
 }
+
+@keyframes morphOne {
+    0% {
+              border-radius:  24% 76% 27% 73% / 46% 74% 26% 54%;
+              /* background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%); */
+      } 
+      
+      50% {
+              border-radius:  51% 49% 84% 16% / 85% 67% 33% 15%;
+              /* background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%); */
+      }
+    
+      100% {
+          border-radius:  24% 76% 27% 73% / 46% 74% 26% 54%;
+          /* background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%); */
+      } 
+  }
 
 .blob-two{
     height: 400px;
@@ -34,8 +53,29 @@ body{
     border-radius: 44% 56% 56% 44% / 38% 68% 32% 62%;
     margin-top: 30%;
     opacity: 80%;
+    animation: morphTwo 8s ease-in-out infinite;
+    transition: all 2s ease-in-out;
 
 }    
+
+
+@keyframes morphTwo {
+    0% {
+              border-radius:  44% 56% 56% 44% / 38% 68% 32% 62%;
+              /* background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%); */
+      } 
+      
+      50% {
+              border-radius:  54% 46% 70% 30% / 56% 30% 70% 44%;
+              /* background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%); */
+      }
+    
+      100% {
+          border-radius:  44% 56% 56% 44% / 38% 68% 32% 62%;;
+          /* background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%); */
+      } 
+  }
+
 
 .blob-three{
     height: 90%;
@@ -47,6 +87,8 @@ body{
     align-items: center;
     text-align: center;
     margin-left: 5%;
+    animation: morphOne 15s ease-in-out infinite;
+    transition: all 3s ease-in-out;
 
 }
 .blob-four{
@@ -55,6 +97,8 @@ body{
     border-radius: 44% 56% 56% 44% / 38% 68% 32% 62%;
     margin-bottom: 30%;
     opacity: 80%;
+    animation: morphTwo 8s ease-in-out infinite;
+    transition: all 2s ease-in-out;
 
 }
 .intro{
@@ -69,12 +113,16 @@ body{
     background-color: rgb(54,74,83);
     border-radius: 44% 56% 56% 44% / 38% 68% 32% 62%;
     opacity: 80%;
+    animation: morphTwo 8s ease-in-out infinite;
+    transition: all 2s ease-in-out;
 
 }
 
 .blob-project-inner{
     background-color: rgb(176,151,155);
     border-radius: 43% 57% 70% 30% / 47% 51% 49% 53%;
+    animation: morphOne 22s ease-in-out infinite;
+    transition: all 10s ease-in-out;
 
 }
 
@@ -98,9 +146,9 @@ background-color:transparent !important;
     background-color:transparent !important;
 }
 
-.app-logo{
-    height: 45px;
-    width: 45px;
+.icons{
+    height: 30px;
+    width: 30px;
 }
 
 

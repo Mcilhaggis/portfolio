@@ -26,12 +26,12 @@ function ProjectCard() {
 
                     {/* Container for logo icons of technologies and frameworks used */}
                     <div class="d-flex justify-content-md-around align-items-center mb-3 logoContainer ">
-                        <FaHtml5 className="app-logo" />
-                        <FaNodeJs className="app-logo" />
-                        <SiHeroku className="app-logo" />
-                        <SiTravisci className="app-logo" />
-                        <SiMysql className="app-logo" />
-                        <SiJest className="app-logo" />
+                        <FaHtml5 className="icons" />
+                        <FaNodeJs className="icons" />
+                        <SiHeroku className="icons" />
+                        <SiTravisci className="icons" />
+                        <SiMysql className="icons" />
+                        <SiJest className="icons" />
                     </div>
 
                     <button className="m-3 btn">Github</button>

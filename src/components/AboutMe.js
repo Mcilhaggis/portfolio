@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
 import { FaRegFilePdf } from "react-icons/fa"
 import img from "../images/self-image.jpg"
+import Resume from "../Rachael-McIlhagga-Technical-Resume.pdf"
 
 
 
@@ -20,11 +21,11 @@ function AboutMe() {
                      In addition to persuing a digital career I also Chair the growing non-profit  <a href="https://getwellgamers.ca" target="_blank" rel="noopener noreferrer">Get Well Gamers Canada</a></p>
                     Phone: 905-931-0014 Email: rachael.mcilhagga@live.co.uk
                     {/* Container for logo icons of technologies and frameworks used */}
-                    <div class="d-flex justify-content-md-around align-items-center mb-3 logoContainer ">
-                        <a href="https://www.linkedin.com/in/rachael-mcilhagga-fullstack-developer/" target="_blank" rel="noopener noreferrer"> <FaLinkedin /></a>
-                        <a href="https://github.com/Mcilhaggis" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                        <a href="https://twitter.com/breadlikerach" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-                        <a href="../../../Rachael-McIlhagga-Technical-Resume.pdf" target="_blank"><FaRegFilePdf /></a>
+                    <div class="d-flex justify-content-md-around align-items-center mb-3 mt-4">
+                        <a href="https://www.linkedin.com/in/rachael-mcilhagga-fullstack-developer/" target="_blank" rel="noopener noreferrer"> <FaLinkedin className="icons"/></a>
+                        <a href="https://github.com/Mcilhaggis" target="_blank" rel="noopener noreferrer"><FaGithub className="icons"/></a>
+                        <a href="https://twitter.com/breadlikerach" target="_blank" rel="noopener noreferrer"><FaTwitter className="icons"/></a>
+                        <a href={Resume} target="blank" ><FaRegFilePdf className="icons"/></a>
                     </div>
 
 
