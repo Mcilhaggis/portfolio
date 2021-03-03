@@ -60,6 +60,17 @@ body{
 
 .project-details {
 background-color:transparent !important;
+border: 1px solid black;
+display: inline-block;
+
+
+
+}
+.project-image-container{
+    border: 1px solid black;
+    display: inline-block;
+    
+
 }
 
 .card-container{
@@ -79,6 +90,7 @@ background-color:transparent !important;
 .logoContainer{
     align-items: center;
     margin: 15px auto;
+    border: 1px solid black;
 }
 
 .btn{
