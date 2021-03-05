@@ -12,9 +12,11 @@ import Resume from "../Rachael-McIlhagga-Technical-Resume.pdf"
 
 function AboutMe() {
     return (
-        <div className="container card-container ">
+        <div className=" about-container container-fluid">
+            {/* <div className="container-fluid"> */}
+
             <div className="flex-row card d-flex flex-wrap justify-content-sm-center">
-                <div className="project-details col-md-12 col-lg-7 text-center">
+                <div className="about-details col-md-10 col-lg-4 text-left">
                     <h1 className="mt-4">About Me</h1>
                     <p className="project-text mt-3">I'm  I'm Rachael, a Full-Stack Web Developer originally from Edinburgh and currently based in Toronto, Canada. Having worked in the service industry for almost 10 years and dabbled with fashion I'm now putting two together and offering thoughtfully designed coding solutions to everyday business problems and all with a smile :)
                     <br></br><br></br>
@@ -30,16 +32,17 @@ function AboutMe() {
 
 
                 </div>
-                <div className="project-image-container text-center col-md-8 col-lg-5 ">
+
+                <div className="project-image-container text-center col-md-8 col-lg-3 ">
                     <div className="blob-project">
                         <div className="blob-project-inner">
                             <img className="aboutImage img-responsive mb-5 mt-5" src={img} alt=""></img>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
+            </div>
+        // </div>
     )
 }
 

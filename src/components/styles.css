@@ -6,6 +6,10 @@ a {
     color: rgb(54,74,83) !important;
   }
 
+p {
+    font-size: .95em;
+}
+
 
 .nav-link, .navbar-brand{
     color: black;
@@ -20,7 +24,7 @@ a {
     height: 80%;
     background-color: rgb(166,161,175);
     border-radius: 24% 76% 27% 73% / 46% 74% 26% 54% ;
-    margin-top: 20% ;
+    margin-top: 15% ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,9 +130,16 @@ a {
 
 }
 
-.project-details {
+.about-details {
 background-color:transparent !important;
 }
+
+.about-container{
+    margin-top: 100px;
+    background: rgb(238, 247, 243);
+    padding: 100px;
+}
+
 
 .aboutImage{
     height: 300px;

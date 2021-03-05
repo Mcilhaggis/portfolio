@@ -9,8 +9,8 @@ function IntroBlobs() {
 
                 <div className="blob-two">
                     <div className="blob-one ">
-                        <p className="intro">Hi, I'm Rachael. <br></br>
-                        A Full Stack Web Developer.
+                        <p className="intro">Hi,  <strong>I'm Rachael.</strong><br></br>
+                        A Full Stack Web Developer drawn to balancing <strong>design</strong> and <strong>functionality</strong>.
                     </p>
 
                     </div>

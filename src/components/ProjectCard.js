@@ -16,7 +16,7 @@ function ProjectCard({ title, description, image, gitLink, siteLink, node, html,
                         </div>
                     </div>
                 </div>
-                <div className="project-details col-md-12 col-lg-5 text-center">
+                <div className="project-details col-md-12 col-lg-5 text-left">
                     <h1 className="mt-4 projectTitle">{title}</h1>
                     <p className="project-text mt-3 projectDescription">{description}</p>
 
