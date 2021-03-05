@@ -13,7 +13,6 @@ import Resume from "../Rachael-McIlhagga-Technical-Resume.pdf"
 function AboutMe() {
     return (
         <div className=" about-container container-fluid">
-            {/* <div className="container-fluid"> */}
 
             <div className="flex-row card d-flex flex-wrap justify-content-sm-center">
                 <div className="about-details col-md-10 col-lg-4 text-left">
@@ -41,8 +40,7 @@ function AboutMe() {
                     </div>
                 </div>
             </div>
-            </div>
-        // </div>
+        </div>
     )
 }
 

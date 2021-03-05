@@ -1,6 +1,7 @@
 import React from 'react';
 import IntroBlobs from "../../components/Blobs/IntroBlobs"
 import ProjectCard from "../../components/ProjectCard"
+import ProjectCardTwo from "../../components/ProjectCardTwo"
 import AboutMe from "../../components/AboutMe"
 import "../../components/styles.css"
 // import LetsGo from "../../images/lets-go-img.png"
@@ -53,7 +54,7 @@ function Home() {
 
 
 
-        <ProjectCard
+        <ProjectCardTwo
             title="It's 5 O'clock somewhere"
             description="Ever wanted to justify a drink at any time of the day? Life's stressful, we get it. This application will take in your drink preferences and suggest cocktails that you can make from the comfort of your own home AND it'll let you know where in the world it's 5pm incase anyone is judging.
     
@@ -84,7 +85,7 @@ function Home() {
             node={FaNodeJs()}
         />
 
-        <ProjectCard
+        <ProjectCardTwo
             title="Employee Tracker"
             description="This Node.js application was an exploration of writing node based application connected to a mySQL database. It holds full CRUD functionality and utilises various npm packages to enhance the functoinality and delivery.
 
@@ -107,7 +108,7 @@ function Home() {
 
 
 
-        <ProjectCard
+        <ProjectCardTwo
             title=""
             description=""
             // image=""
