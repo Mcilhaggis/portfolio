@@ -130,11 +130,17 @@ a {
 background-color:transparent !important;
 }
 
-.projectImage{
+.aboutImage{
     height: 300px;
     width: 300px;
-    border-radius: 20px;
-    /* border: 1px navy solid; */
+    border-radius: 70px;
+    border: 2px rgb(54,74,83) solid;
+}
+.projectImage{
+    height: 300px;
+    width: 400px;
+    /* border-radius: 20px; */
+    border: 1px white solid;
 }
 
 
@@ -146,6 +152,7 @@ background-color:transparent !important;
 
 .card{
     background-color:transparent !important;
+    border: none !important;
 }
 
 .icons{

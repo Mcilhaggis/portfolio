@@ -10,7 +10,7 @@ function IntroBlobs() {
                 <div className="blob-two">
                     <div className="blob-one ">
                         <p className="intro">Hi, I'm Rachael. <br></br>
-                        A Full Stack Web Developer with an eye for balancing design and functionality.
+                        A Full Stack Web Developer.
                     </p>
 
                     </div>

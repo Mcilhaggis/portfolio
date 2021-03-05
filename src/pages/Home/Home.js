@@ -4,15 +4,30 @@ import ProjectCard from "../../components/ProjectCard"
 import AboutMe from "../../components/AboutMe"
 import "../../components/styles.css"
 // import LetsGo from "../../images/lets-go-img.png"
+
+//Importing icons from react-icons to be executed in the componenets they are rendered to 
 import { FaHtml5 } from "react-icons/fa"
-// import { FaNodeJs } from "react-icons/fa"
-// import { SiTravisci } from "react-icons/si"
-// import { SiHeroku } from "react-icons/si"
-// import { SiMysql } from "react-icons/si"
-// import { SiJest } from "react-icons/si"
+import { FaNodeJs } from "react-icons/fa"
+import { SiTravisci } from "react-icons/si"
+import { SiHeroku } from "react-icons/si"
+import { SiMysql } from "react-icons/si"
+import { SiJest } from "react-icons/si"
+import {DiMaterializecss} from "react-icons/di"
+import {DiJavascript1} from "react-icons/di"
+
+
+// importing images 
+import LetsGoImg from "../../images/lets-go-img.png"
+// import EmployeeImg from "../../images/employee-tracker.png"
+// import FiveOclockImg from "../../images/five-oclock-img.png"
+// import BurgerImg from "../../images/burger-logger-img.png"
+
+
 
 
 function Home() {
+
+
     return (<div>
         <IntroBlobs />
         <AboutMe />
@@ -21,12 +36,18 @@ function Home() {
             description="'Let's Go' Travel Planner is a convenient planner that allows you to plan your future vacations, work trips, weekends away with just a few clicks. By pulling from both a well revered restaruant review API and expidition API you can save must-visit landmarks, experiences and restaurants. Since we implemented passport Authentication on visitng the site, When you wish to review your selections you can access your own personal itinerary where you'll find your choices grouped by destination. 
     
     In this group project applicaiton I was tasked with setting up the database to allow for the app to operate as a full CRUD application and applying the CSS design to the page."
-            // image={LetsGo}
+            image={LetsGoImg}
             gitLink="https://github.com/Mcilhaggis/lets-go-travel-planner"
             siteLink="https://stormy-springs-60842.herokuapp.com/"
-            icons={FaHtml5}
+
+            //Since react-icons are functions they have to be passed individually to execute in the component, it will not accept them in an array.
+            node={FaNodeJs()}
+            html={FaHtml5()}
+            travis={SiTravisci()}
+            heroku={SiHeroku()}
+            sql={SiMysql()}
+            jest={SiJest()}
         >
-            <FaHtml5 />
         </ProjectCard>
 
 
@@ -38,7 +59,14 @@ function Home() {
     In this group project application I provided the group with the concept and functionality which the team chose to move forward with. Personally I was responsible for creating the dynmically populated modal feauture that uses local storage to save users favourite tipples"
             // image={}
             gitLink="https://github.com/nsuroghon/5-o-Clock-Somewhere"
-            siteLink="https://nsuroghon.github.io/5-o-Clock-Somewhere/" />
+            siteLink="https://nsuroghon.github.io/5-o-Clock-Somewhere/" 
+            
+            //Since react-icons are functions they have to be passed individually to execute in the component, it will not accept them in an array.
+            html={FaHtml5()}
+            materialize={DiMaterializecss()}
+            javascript={DiJavascript1()}
+            
+            />
 
 
         <ProjectCard
