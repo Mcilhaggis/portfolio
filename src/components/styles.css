@@ -9,7 +9,6 @@ a {
 p {
     font-size: .95em;
     font-family: 'Poppins', sans-serif;
-
 }
 
 h1{
@@ -136,8 +135,8 @@ h1{
 }
 
 .projectImage{
-    height: 300px;
-    width: 570px;
+    height: 350px;
+    width: 650px;
 }
 
 
@@ -167,3 +166,11 @@ h1{
 .btn{
     box-shadow: 1px 1px ;
 }
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+  }

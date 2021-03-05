@@ -4,6 +4,7 @@ import ProjectHeader from "../../components/ProjectHeader"
 import ProjectCard from "../../components/ProjectCard"
 import ProjectCardTwo from "../../components/ProjectCardTwo"
 import AboutMe from "../../components/AboutMe"
+import Footer from "../../components/Footer"
 import "../../components/styles.css"
 // import LetsGo from "../../images/lets-go-img.png"
 
@@ -35,7 +36,7 @@ function Home() {
     return (<div>
         <IntroBlobs />
         <AboutMe />
-        <ProjectHeader />
+        {/* <ProjectHeader /> */}
         <ProjectCard
             title=" 'Let's Go' Travel Planner"
             description="'Let's Go' Travel Planner is a convenient planner that allows you to plan your future vacations, work trips, weekends away with just a few clicks. By pulling from both a well revered restaruant review API and expidition API you can save must-visit landmarks, experiences and restaurants. Since we implemented passport Authentication on visitng the site, When you wish to review your selections you can access your own personal itinerary where you'll find your choices grouped by destination. 
@@ -117,6 +118,7 @@ function Home() {
             image={EmployeeDirectoryImg}
             gitLink="https://github.com/Mcilhaggis/employee-directory-react"
             siteLink="https://mcilhaggis.github.io/employee-directory-react/" />
+            {/* <Footer /> */}
     </div>
     )
 }

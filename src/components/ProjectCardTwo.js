@@ -32,15 +32,15 @@ function ProjectCardTwo({ title, description, image, gitLink, siteLink, node, ht
                     <a className="siteLink" href={siteLink} target="_blank" rel="noopener noreferrer"><button className="m-3 btn">Live Site</button></a>
 
                 </div>
-                <div className="project-image-container justify-content-md-center ">
+                {/* <div className="project-image-container justify-content-md-center "> */}
 
                 <div className="project-image-container col-md-8 col-lg-10 justify-content-lg-right ">
                     <div className="blob-project-two-back">
                         <div className="blob-project-two-front">
-                            <img className="projectImage img-responsive mb-5 mt-5" src={image} alt=""></img>
+                            <img className="projectImage img-fluid mb-5 mt-5" src={image} alt=""></img>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
 </div>
 
             </div>

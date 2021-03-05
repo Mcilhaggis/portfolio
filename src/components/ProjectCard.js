@@ -12,16 +12,16 @@ function ProjectCard({ title, description, image, gitLink, siteLink, node, html,
             {/* Adds flex styling to the whole div */}
             <div className="flex-row card d-flex flex-wrap justify-content-sm-center">
                 {/* Holds the blob and image and sets the col width */}
-                <div className="project-image-container justify-content-md-center ">
+                {/* <div className="project-image-container"> */}
 
-                    <div className="project-image-container col-md-8 col-lg-9 ">
+                    <div className="project-image-container col-sm-2 col-md-8 col-lg-4 ">
                         <div className="blob-project-one-back">
                             <div className="blob-project-one-front">
-                                <img className="projectImage img-responsive mb-5 mt-5" src={image} alt="project described in blurb adjacent"></img>
+                                <img className="projectImage img-fluid mb-5 mt-5" src={image} alt="project described in blurb adjacent"></img>
                             </div>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
                 {/* Holds the projects details to buttons */}
                 <div className="project-details col-md-12 col-lg-5 text-left">
                     <h1 className="mt-4 projectTitle">{title}</h1>
