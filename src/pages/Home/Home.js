@@ -1,5 +1,6 @@
 import React from 'react';
 import IntroBlobs from "../../components/Blobs/IntroBlobs"
+import ProjectHeader from "../../components/ProjectHeader"
 import ProjectCard from "../../components/ProjectCard"
 import ProjectCardTwo from "../../components/ProjectCardTwo"
 import AboutMe from "../../components/AboutMe"
@@ -22,6 +23,8 @@ import LetsGoImg from "../../images/lets-go-img.png"
 import EmployeeImg from "../../images/employee-tracker.png"
 import FiveOclockImg from "../../images/five-oclock-img.png"
 import BurgerImg from "../../images/burger-logger-img.png"
+import RecipeImg from "../../images/recipe-finder-img.png"
+import EmployeeDirectoryImg from "../../images/employee-directory-img.png"
 
 
 
@@ -32,7 +35,7 @@ function Home() {
     return (<div>
         <IntroBlobs />
         <AboutMe />
-        <h1>Projects</h1>
+        <ProjectHeader />
         <ProjectCard
             title=" 'Let's Go' Travel Planner"
             description="'Let's Go' Travel Planner is a convenient planner that allows you to plan your future vacations, work trips, weekends away with just a few clicks. By pulling from both a well revered restaruant review API and expidition API you can save must-visit landmarks, experiences and restaurants. Since we implemented passport Authentication on visitng the site, When you wish to review your selections you can access your own personal itinerary where you'll find your choices grouped by destination. 
@@ -99,11 +102,11 @@ function Home() {
         />
 
         <ProjectCard
-            title=""
+            title="Recipe Finder"
             description=""
-            // image=""
-            gitLink=""
-            siteLink="" />
+            image={RecipeImg}
+            gitLink="https://github.com/Mcilhaggis/recipe-finder-react"
+            siteLink="https://guarded-badlands-10806.herokuapp.com/" />
 
 
 
@@ -111,9 +114,9 @@ function Home() {
         <ProjectCardTwo
             title=""
             description=""
-            // image=""
-            gitLink=""
-            siteLink="" />
+            image={EmployeeDirectoryImg}
+            gitLink="https://github.com/Mcilhaggis/employee-directory-react"
+            siteLink="https://mcilhaggis.github.io/employee-directory-react/" />
     </div>
     )
 }

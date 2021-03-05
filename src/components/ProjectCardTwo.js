@@ -11,14 +11,7 @@ function ProjectCardTwo({ title, description, image, gitLink, siteLink, node, ht
 
         <div className="container  ">
             <div className="flex-row card d-flex flex-wrap justify-content-sm-center">
-                <div className="project-image-container text-center col-md-8 col-lg-6 justify-content-md-center ">
-                    <div className="blob-project">
-                        <div className="blob-project-inner">
-                            <img className="projectImage img-responsive mb-5 mt-5" src={image} alt=""></img>
-                        </div>
-                    </div>
-                </div>
-                <div className="project-details col-md-12 col-lg-5 text-left">
+                <div className="project-details col-md-12 col-lg-5 text-left ml-4">
                     <h1 className="mt-4 projectTitle">{title}</h1>
                     <p className="project-text mt-3 projectDescription">{description}</p>
 
@@ -40,6 +33,13 @@ function ProjectCardTwo({ title, description, image, gitLink, siteLink, node, ht
 
                 </div>
 
+                <div className="project-image-container text-center col-md-8 col-lg-6 justify-content-md-center ">
+                    <div className="blob-project-two-back">
+                        <div className="blob-project-two-front">
+                            <img className="projectImage img-responsive mb-5 mt-5" src={image} alt=""></img>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         </div>

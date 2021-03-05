@@ -10,8 +10,8 @@ function ProjectCard({ title, description, image, gitLink, siteLink, node, html,
         <div className="container card-container ">
             <div className="flex-row card d-flex flex-wrap justify-content-sm-center">
                 <div className="project-image-container text-center col-md-8 col-lg-6 justify-content-md-center ">
-                    <div className="blob-project">
-                        <div className="blob-project-inner">
+                    <div className="blob-project-one-back">
+                        <div className="blob-project-one-front">
                             <img className="projectImage img-responsive mb-5 mt-5" src={image} alt=""></img>
                         </div>
                     </div>

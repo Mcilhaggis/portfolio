@@ -9,7 +9,7 @@ function ContactBlobs() {
                 <div className="col-md-9 col-lg-6">
 
                 <div className="blob-four">
-                    <div className="blob-three ">
+                    <div className="blob-three mt-5 blob-align ">
                         <ContactForm />
 
                     </div>

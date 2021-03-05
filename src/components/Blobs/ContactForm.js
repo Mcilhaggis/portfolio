@@ -2,7 +2,7 @@ import React from "react";
 import "../styles.css";
 
 
-function ContactForm() {
+function ContactForm(props) {
 return(
 
 
@@ -13,11 +13,11 @@ return(
     <p>
       Send me a message, I'll get back to you at the earliest!
     </p>
-    <form method="post" id="reused_form">
+    <form onSubmit={props.onSubmit}>
 
         <div className="row ">
             <div className="col-sm-12 form-group">
-                <textarea className="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="5"></textarea>
+                <textarea className="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="5">Hi Rachael, </textarea>
             </div>
         </div>
         <div className="row">

@@ -17,7 +17,7 @@ function AboutMe() {
             <div className="flex-row card d-flex flex-wrap justify-content-sm-center">
                 <div className="about-details col-md-10 col-lg-4 text-left">
                     <h1 className="mt-4">About Me</h1>
-                    <p className="project-text mt-3">I'm  I'm Rachael, a Full-Stack Web Developer originally from Edinburgh and currently based in Toronto, Canada. Having worked in the service industry for almost 10 years and dabbled with fashion I'm now putting two together and offering thoughtfully designed coding solutions to everyday business problems and all with a smile :)
+                    <p className="project-text mt-3">I'm  I'm Rachael, a <strong className="about-strong">Full-Stack Web Developer</strong> originally from Edinburgh and currently based in Toronto, Canada. Having worked in the service industry for almost 10 years and dabbled with fashion I'm now putting two together and  <strong className="about-strong">offering thoughtfully designed coding solutions</strong> to everyday business problems and all  <strong className="about-strong">with a smile :)</strong> 
                     <br></br><br></br>
                      In addition to persuing a digital career I also Chair the growing non-profit  <a href="https://getwellgamers.ca" target="_blank" rel="noopener noreferrer">Get Well Gamers Canada</a></p>
                     Phone: 905-931-0014 Email: rachael.mcilhagga@live.co.uk
@@ -33,8 +33,8 @@ function AboutMe() {
                 </div>
 
                 <div className="project-image-container text-center col-md-8 col-lg-3 ">
-                    <div className="blob-project">
-                        <div className="blob-project-inner">
+                    <div className="blob-project-one-back">
+                        <div className="blob-project-two-front">
                             <img className="aboutImage img-responsive mb-5 mt-5" src={img} alt=""></img>
                         </div>
                     </div>
