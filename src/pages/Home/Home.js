@@ -103,7 +103,7 @@ function Home() {
 
         <ProjectCard
             title="Recipe Finder"
-            description=""
+            description="Have all the ingredients and no inspiration? Use this fun recipe finder to find fun recipes from the Edamam API. Using React to create a component based interface the options are endless."
             image={RecipeImg}
             gitLink="https://github.com/Mcilhaggis/recipe-finder-react"
             siteLink="https://guarded-badlands-10806.herokuapp.com/" />
@@ -112,8 +112,8 @@ function Home() {
 
 
         <ProjectCardTwo
-            title=""
-            description=""
+            title="Employee Directory"
+            description="Using React and randomuser.me API, this application is designed to allow users to filter their employees by any of the table headingS, as well as search for users by name and have the results immediately display, demonstrating how react is able to undate the DOM without reloading the entire page."
             image={EmployeeDirectoryImg}
             gitLink="https://github.com/Mcilhaggis/employee-directory-react"
             siteLink="https://mcilhaggis.github.io/employee-directory-react/" />

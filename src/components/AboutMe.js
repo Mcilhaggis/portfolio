@@ -20,7 +20,8 @@ function AboutMe() {
                     <p className="project-text mt-3">I'm  I'm Rachael, a <strong className="about-strong">Full-Stack Web Developer</strong> originally from Edinburgh and currently based in Toronto, Canada. Having worked in the service industry for almost 10 years and dabbled with fashion I'm now putting two together and  <strong className="about-strong">offering thoughtfully designed coding solutions</strong> to everyday business problems and all  <strong className="about-strong">with a smile :)</strong> 
                     <br></br><br></br>
                      In addition to persuing a digital career I also Chair the growing non-profit  <a href="https://getwellgamers.ca" target="_blank" rel="noopener noreferrer">Get Well Gamers Canada</a></p>
-                    Phone: 905-931-0014 Email: rachael.mcilhagga@live.co.uk
+                    <p>Phone: 905-931-0014</p>
+                    <p>Email: rachael.mcilhagga@live.co.uk</p>
                     {/* Container for logo icons of technologies and frameworks used */}
                     <div className="d-flex justify-content-around align-items-center mb-5 mt-4">
                         <a href="https://www.linkedin.com/in/rachael-mcilhagga-fullstack-developer/" target="_blank" rel="noopener noreferrer"> <FaLinkedin className="icons" /></a>

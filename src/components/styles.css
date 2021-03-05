@@ -8,6 +8,12 @@ a {
 
 p {
     font-size: .95em;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1{
+    font-family: 'Cormorant', serif;
 }
 
 .about-strong{
@@ -17,6 +23,8 @@ p {
 .nav-link, .navbar-brand{
     color: black;
     margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .header-container{
@@ -97,7 +105,7 @@ p {
     transition: all 4s ease-in-out;
 }
 .blob-project-two-back{
-    background-color: rgb(54,74,83);
+    background-color: rgb(220,101,86);
     animation: thirdMorph 12s ease-in-out infinite;
     transition: all 6s ease-in-out;
 }
