@@ -118,7 +118,6 @@ function Home() {
             image={EmployeeDirectoryImg}
             gitLink="https://github.com/Mcilhaggis/employee-directory-react"
             siteLink="https://mcilhaggis.github.io/employee-directory-react/" />
-            <Footer />
     </div>
     )
 }
