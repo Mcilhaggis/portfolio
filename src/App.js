@@ -5,7 +5,6 @@ import "./components/styles.css"
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 
 import Home from "./pages/Home/Home";
@@ -18,10 +17,10 @@ const App = () => {
       <div>
         <Navbar />
         <Wrapper>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/portfolio" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/about" component={Contact} />
-          <Route exact path="/projects" component={Home} />
+          {/* <Route exact path="/projects" component={Home} /> */}
         </Wrapper>
       </div>
     </Router>

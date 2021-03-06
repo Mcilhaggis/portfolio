@@ -1,6 +1,6 @@
 import React from 'react';
 import IntroBlobs from "../../components/Blobs/IntroBlobs"
-import ProjectHeader from "../../components/ProjectHeader"
+// import ProjectHeader from "../../components/ProjectHeader"
 import ProjectCard from "../../components/ProjectCard"
 import ProjectCardTwo from "../../components/ProjectCardTwo"
 import AboutMe from "../../components/AboutMe"
@@ -118,7 +118,7 @@ function Home() {
             image={EmployeeDirectoryImg}
             gitLink="https://github.com/Mcilhaggis/employee-directory-react"
             siteLink="https://mcilhaggis.github.io/employee-directory-react/" />
-            {/* <Footer /> */}
+            <Footer />
     </div>
     )
 }
