@@ -3,7 +3,7 @@ import "./App.css";
 import "./components/styles.css"
 
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
 
@@ -17,7 +17,7 @@ const App = () => {
       <div>
         <Navbar />
         <Wrapper>
-          <Route exact path="/portfolio" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/about" component={Contact} />
           {/* <Route exact path="/projects" component={Home} /> */}
