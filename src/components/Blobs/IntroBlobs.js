@@ -8,9 +8,9 @@ function IntroBlobs() {
                 <div className="col-md-9 col-lg-5 d-flex justify-content-center justify-content-lg-start">
 
                 <div className="blob-two">
-                    <div className="blob-one ">
-                        <p className="intro">Hi, I'm Rachael. <br></br>
-                        A Full Stack Web Developer with an eye for balancing design and functionality.
+                    <div className="blob-one blob-align ">
+                        <p className="intro">Hi,  <strong>I'm Rachael.</strong><br></br>
+                        A Full Stack Web Developer drawn to balancing <strong>design</strong> and <strong>functionality</strong>.
                     </p>
 
                     </div>

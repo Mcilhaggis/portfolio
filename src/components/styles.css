@@ -2,97 +2,175 @@ body{
     background-color: rgb(237,234,227) !important;
 }
 
+a {
+    color: rgb(54,74,83) !important;
+  }
+
+p {
+    font-size: .95em;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-family: 'Cormorant', serif;
+}
+
+.about-strong{
+    font-size: 1.1em;
+}
+
 .nav-link, .navbar-brand{
     color: black;
     margin-top: 30px;
-}
+    font-family: 'Poppins', sans-serif;
 
-/* .footer{
-    border-top: 1px solid black;
-    position: fixed;bottom: 0;
-} */
+}
 
 .header-container{
     height: 100vh;
+}
+
+.blob-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .blob-one{
     height: 80%;
     background-color: rgb(166,161,175);
     border-radius: 24% 76% 27% 73% / 46% 74% 26% 54% ;
-    margin-top: 20% ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin-top: 15% ;
     margin-left: 5%;
+    animation: firstMorph 15s ease-in-out infinite;
+    transition: all 3s ease-in-out;
 }
 
-.intro{
-    max-width: 60%;
-    top: 50%;
-    font-size: 1.25em;
 
-}
 .blob-two{
     height: 400px;
     background-color: rgb(204,158,83);
     border-radius: 44% 56% 56% 44% / 38% 68% 32% 62%;
     margin-top: 30%;
-    opacity: 80%;
+    animation: secondMorph 8s ease-in-out infinite;
+    transition: all 2s ease-in-out;
+}    
 
+.blob-three{
+    height: 90%;
+    background-color:rgb(234,209,195);
+    border-radius: 24% 76% 27% 73% / 46% 64% 36% 54% ;
+    animation: thirdMorph 15s ease-in-out infinite;
+    transition: all 3s ease-in-out;
 }
 
-.blob-project{
-    background-color: rgb(54,74,83);
+.blob-four{
+    height: 80%;
+    background-color:rgb(220,101,86);
     border-radius: 44% 56% 56% 44% / 38% 68% 32% 62%;
-    opacity: 80%;
-
+    margin-bottom: 30%;
+    animation: secondMorph 8s ease-in-out infinite;
+    transition: all 2s ease-in-out;
 }
 
-.blob-project-inner{
-    background-color: rgb(176,151,155);
-    border-radius: 43% 57% 70% 30% / 47% 51% 49% 53%;
-    margin-right: 40px;
-    /* opacity: 80%; */
+@keyframes firstMorph {
+    0% {border-radius:  24% 76% 27% 73% / 46% 74% 26% 54%;} 
+    50% {border-radius:  85% 15% 63% 37% / 43% 19% 81% 57%;}
+    100% {border-radius:  24% 76% 27% 73% / 46% 74% 26% 54%;} 
+  }
 
+@keyframes secondMorph {
+    0% {border-radius:  44% 56% 56% 44% / 38% 68% 32% 62%;} 
+    50% {border-radius:  54% 46% 70% 30% / 56% 30% 70% 44%;}
+    100% {border-radius:  44% 56% 56% 44% / 38% 68% 32% 62%;} 
+  }
+  
+  @keyframes thirdMorph {
+      0% {border-radius:  36% 64% 82% 18% / 73% 72% 28% 27%;} 
+      50% {border-radius:  61% 39% 49% 51% / 49% 58% 42% 51%  ;}
+      100% {border-radius:  36% 64% 82% 18% / 73% 72% 28% 27%;} 
+    }
+
+.intro{
+    max-width: 60%;
+    top: 50%;
+    font-size: 1.25em;
 }
 
-.project-details {
-background-color:transparent !important;
-border: 1px solid black;
-display: inline-block;
-
-
-
+.blob-project-one-back{
+    background-color: rgb(98,152,127);
+    animation: secondMorph 8s ease-in-out infinite;
+    transition: all 4s ease-in-out;
 }
-.project-image-container{
-    border: 1px solid black;
-    display: inline-block;
-    
-
+.blob-project-two-back{
+    background-color: rgb(220,101,86);
+    animation: thirdMorph 12s ease-in-out infinite;
+    transition: all 6s ease-in-out;
 }
+
+.blob-project-one-front{
+    background-color: rgb(234,209,195);
+    animation: firstMorph 22s ease-in-out infinite;
+    transition: all 10s ease-in-out;
+}
+.blob-project-two-front{
+    background-color: rgb(97,128,146);
+    animation: firstMorph 22s ease-in-out infinite;
+    transition: all 3s ease-in-out;
+}
+
+.about-container{
+    margin-top: 100px;
+    background: rgb(238, 247, 243);
+    padding: 100px;
+}
+
+
+.aboutImage{
+    height: 300px;
+    width: 300px;
+    border-radius: 70px;
+    border: 1px rgb(54,74,83) solid;
+}
+
+.projectImage{
+    height: 350px;
+    width: 650px;
+}
+
 
 .card-container{
-    background-color: transparent !important;
     margin-top: 100px;
+    padding: 80px;
+
+}
+
+.card-container-two{
+    background-color: rgb(238, 247, 243) !important;
+    margin-top: 100px;
+    padding: 80px;
 }
 
 .card{
     background-color:transparent !important;
+    border: none !important;
 }
 
-.app-logo{
-    height: 45px;
-    width: 45px;
+.icons{
+    height: 30px;
+    width: 30px;
 }
 
-.logoContainer{
-    align-items: center;
-    margin: 15px auto;
-    border: 1px solid black;
-}
 
 .btn{
     box-shadow: 1px 1px ;
 }
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+  }

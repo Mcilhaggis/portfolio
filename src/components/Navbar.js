@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "./styles.css";
 
 
-function Navbar(){
-    return(
-<nav className="navbar justify-content-center transparent">    
-<Link className="navbar-brand" to="/">
+function Navbar() {
+  return (
+    <nav className="navbar justify-content-center transparent">
+      <Link className="navbar-brand" to="/">
         Rachael McIlhagga     │
       </Link>
       <div>
@@ -26,13 +26,26 @@ function Navbar(){
           <li>
             <Link
               to="/about"
-              className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}
+              className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}
             >
-              About
+              Contact
             </Link>
           </li>
+          {/* <li className="link">
+            <Link
+              to="/home/#projects"
+              className={
+                window.location.pathname === "/" || window.location.pathname === "/home"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+              
+            >
+              Projects
+            </Link>
+          </li> */}
         </ul>
-      </div>       
+      </div>
 
     </nav>
   );
