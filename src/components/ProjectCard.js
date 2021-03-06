@@ -14,7 +14,7 @@ function ProjectCard({ title, description, image, gitLink, siteLink, node, html,
                 {/* Holds the blob and image and sets the col width */}
                 {/* <div className="project-image-container"> */}
 
-                    <div className="project-image-container col-sm-3 col-md-8 col-lg-4 ">
+                    <div className="project-image-container col-sm-4 col-md-8 col-lg-4 ">
                         <div className="blob-project-one-back">
                             <div className="blob-project-one-front">
                                 <img className="projectImage img-fluid mb-5 mt-5" src={image} alt="project described in blurb adjacent"></img>
