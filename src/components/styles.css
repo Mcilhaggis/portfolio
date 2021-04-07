@@ -1,17 +1,18 @@
 body{
-    background-color: rgb(237,234,227) !important;
+    /* background-color: rgb(237,234,227) !important; */
+    background-image: url("../images/backgroundCircle.png");
 }
 
 a {
-    color: rgb(54,74,83) !important;
+    color: #d4a5a5 !important;
   }
 
 p {
-    font-size: .95em;
+    font-size: 1em;
     font-family: 'Poppins', sans-serif;
 }
 
-h1{
+h1, h2{
     font-family: 'Cormorant', serif;
 }
 
@@ -95,7 +96,7 @@ h1{
 }
 
 .blob-project-one-back{
-    background-color: rgb(98,152,127);
+    background-color: #d4a5a5;
     animation: secondMorph 8s ease-in-out infinite;
     transition: all 4s ease-in-out;
 }
@@ -111,7 +112,7 @@ h1{
     transition: all 10s ease-in-out;
 }
 .blob-project-two-front{
-    background-color: rgb(97,128,146);
+    background-color: #f3d7ca;
     animation: firstMorph 22s ease-in-out infinite;
     transition: all 3s ease-in-out;
 }
@@ -120,32 +121,64 @@ h1{
     margin-top: 100px;
     background: rgb(238, 247, 243);
     padding: 100px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
 }
 
+.skillsMainContainer{
+    margin-top: 50px;
+}
+.skillContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ .skillContainer div{
+     text-align: center;
+     margin: auto 14px;
+ }
 
 .aboutImage{
     height: 300px;
     width: 300px;
     border-radius: 70px;
-    border: 1px rgb(54,74,83) solid;
+}
+
+.projectHeader{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.projectHeader h2{
+    font-size:2.5em;
 }
 
 .projectImage{
-    height: 350px;
     width: 650px;
 }
 
 
 .card-container{
-    margin-top: 100px;
-    padding: 80px;
-
+    background-color: rgb(213, 243, 231) !important;
+    padding: 40px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .card-container-two{
     background-color: rgb(238, 247, 243) !important;
-    margin-top: 100px;
-    padding: 80px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card{
@@ -157,10 +190,13 @@ h1{
     height: 30px;
     width: 30px;
 }
-
+.projectIcons{
+    height: 40px !important;
+    margin-top:50px;
+}
 
 .btn{
-    box-shadow: 1px 1px ;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 

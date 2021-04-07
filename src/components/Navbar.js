@@ -31,19 +31,6 @@ function Navbar() {
               Contact
             </Link>
           </li>
-          {/* <li className="link">
-            <Link
-              to="/home/#projects"
-              className={
-                window.location.pathname === "/" || window.location.pathname === "/home"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-              
-            >
-              Projects
-            </Link>
-          </li> */}
         </ul>
       </div>
 

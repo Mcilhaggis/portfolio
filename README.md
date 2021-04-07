@@ -8,14 +8,12 @@
 
 This updated version of my portfolio is built using the React library. It displays everything that we have learned to date in the U of T bootcamp.
 
+## Screenshots
 ![Screenshot of my Portfolio Application.](src/images/Screenshot1.png "Screenshot of my Portfolio Application")
 ![Screenshot of my Portfolio Application.](src/images/Screenshot2.png "Screenshot of my Portfolio Application")
 ![Screenshot of my Portfolio Application.](src/images/Screenshot3.png "Screenshot of my Portfolio Application")
 
-
-
 ## Live Project
-
 Thle live site can be viewed on gh pages here: https://mcilhaggis.github.io/portfolio/
 
 ## Licensing 
