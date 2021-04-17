@@ -3,8 +3,12 @@ body{
     background-image: url("../images/backgroundCircle.png");
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 a {
-    color: #d4a5a5 !important;
+    color: #aa6666 !important;
   }
 
 p {
@@ -36,7 +40,7 @@ h1, h2{
 
 .blob-one{
     height: 80%;
-    background-color: rgb(166,161,175);
+    background-color: #e4d1bb;
     border-radius: 24% 76% 27% 73% / 46% 74% 26% 54% ;
     margin-top: 15% ;
     margin-left: 5%;
@@ -47,7 +51,7 @@ h1, h2{
 
 .blob-two{
     height: 400px;
-    background-color: rgb(204,158,83);
+    background-color: #a3d2ca;
     border-radius: 44% 56% 56% 44% / 38% 68% 32% 62%;
     margin-top: 30%;
     animation: secondMorph 8s ease-in-out infinite;
@@ -117,8 +121,30 @@ h1, h2{
     transition: all 3s ease-in-out;
 }
 
+.sectionBar{
+    display: flex;
+    justify-content:center;
+    font-size: 1.75rem;
+    margin-top: 240px;
+    margin-bottom: 40px
+}
+
+.sectionBar > a{
+    padding-left:  25px;
+    padding-right:  25px;
+}
+
+.space{
+    position: relative;
+    top: -220px;
+}
+
+.spaceTwo{
+    position: relative;
+    top: -80px;
+}
+
 .about-container{
-    margin-top: 100px;
     background: rgb(238, 247, 243);
     padding: 100px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;

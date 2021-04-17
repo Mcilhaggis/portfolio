@@ -4,8 +4,7 @@ import "./styles.css";
 
 
 
-function ProjectCard({ title, description, image, gitLink, siteLink, node, html, travis,react, heroku, sql, jest, materialize, javascript }) {
-
+function ProjectCard({ title, description, image,icons, gitLink, siteLink}) {
     return (
         // container for the whole div
         <div className="card-container col-lg-8 col-sm-12">
@@ -26,16 +25,11 @@ function ProjectCard({ title, description, image, gitLink, siteLink, node, html,
                     <p className="project-text mt-3 projectDescription">{description}</p>
 
                     {/* Container for logo icons of technologies and frameworks used */}
-                    <div classNme="d-flex justify-content-sm-around align-items-center mb-5 mt-4">
-                        <i className="icons">{node}</i>
-                        <i className="icons">{html}</i>
-                        <i className="icons">{travis}</i>
-                        <i className="icons">{heroku}</i>
-                        <i className="icons">{sql}</i>
-                        <i className="icons">{jest}</i>
-                        <i className="icons">{materialize}</i>
-                        <i className="icons">{javascript}</i>
-                        <i className="icons">{react}</i>
+                    <div className="d-flex justify-content-sm-around align-items-center mb-5 mt-4">
+                        
+                    {icons.map(icon => {
+                            return <img src={icon} alt="icon" className="icons"></img>
+                        })}
 
                     </div>
                     {/* buttons */}

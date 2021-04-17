@@ -3,7 +3,6 @@ import "./styles.css";
 // importing icons for socials and resume
 import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
-import { FaTwitter } from "react-icons/fa"
 import { FaRegFilePdf } from "react-icons/fa"
 // importing icons for skills
 import { FaHtml5 } from "react-icons/fa"
@@ -32,6 +31,7 @@ function AboutMe() {
 
             <div className="flex-row card d-flex flex-wrap justify-content-sm-center">
                 <div className="about-details col-md-10 col-lg-4 text-left">
+                    <div id="About" className="space"></div>
                     <h1 className="mt-4">About Me</h1>
                     <p className="project-text mt-3">I'm Rachael, a <strong className="about-strong">Full-Stack Web Developer</strong> originally from Edinburgh and currently based in Toronto, Canada. Having worked in the service industry for almost 10 years and dabbled with fashion I'm now putting two together and  <strong className="about-strong">offering thoughtfully designed coding solutions</strong> to everyday business problems and all  <strong className="about-strong">with a smile :)</strong>
                     {/* Container for icons to links of socials and resume*/}

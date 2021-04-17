@@ -1,23 +1,25 @@
 import React from 'react';
+
 import IntroBlobs from "../../components/Blobs/IntroBlobs"
-// import ProjectHeader from "../../components/ProjectHeader"
 import ProjectCard from "../../components/ProjectCard"
 import ProjectCardTwo from "../../components/ProjectCardTwo"
 import AboutMe from "../../components/AboutMe"
-import Footer from "../../components/Footer"
+// import Footer from "../../components/Footer"
+import SectionBar from "../../components/sectionBar"
 import "../../components/styles.css"
-// import LetsGo from "../../images/lets-go-img.png"
 
 //Importing icons from react-icons to be executed in the componenets they are rendered to 
-import { FaHtml5 } from "react-icons/fa"
-import { FaNodeJs } from "react-icons/fa"
-import { FaReact } from "react-icons/fa"
-import { SiTravisci } from "react-icons/si"
-import { SiHeroku } from "react-icons/si"
-import { SiMysql } from "react-icons/si"
-import { SiJest } from "react-icons/si"
-import { DiMaterializecss } from "react-icons/di"
-import { DiJavascript1 } from "react-icons/di"
+// import { FaHtml5 } from "react-icons/fa"
+// import { FaNodeJs } from "react-icons/fa"
+// import { FaReact } from "react-icons/fa"
+// import { SiTravisci } from "react-icons/si"
+// import { SiHeroku } from "react-icons/si"
+// import { SiMysql } from "react-icons/si"
+// import { SiJest } from "react-icons/si"
+// import { DiMaterializecss } from "react-icons/di"
+// import { DiJavascript1 } from "react-icons/di"
+
+
 
 
 // importing images 
@@ -28,19 +30,29 @@ import RecipeImg from "../../images/recipe-finder-img.png"
 import MindshareImg from "../../images/mindshare-img.png"
 import EmployeeDirectoryImg from "../../images/employee-directory-img.png"
 
-
-
+//importing icons
+import htmlImg from "../../images/icons/html.png"
+import travisImg from "../../images/icons/travis.png"
+import nodeImg from "../../images/icons/node.png"
+import herokuImg from "../../images/icons/heroku.png"
+import reactImg from "../../images/icons/react.png"
+import sqlImg from "../../images/icons/mysql.png"
+import jestImg from "../../images/icons/jest.png"
+import javascriptImg from '../../images/icons/js.png'
+import materialImg from '../../images/icons/material.png'
+import sequelizeImg from '../../images/icons/sequelize.png'
 
 function Home() {
-
-
     return (<>
         <IntroBlobs />
+
+        <SectionBar />
+        <div id="sectionBar"></div>
         <AboutMe />
-        {/* <ProjectHeader /> */}
         <div className="projectHeader">
-        <h2>Projects</h2>
+            <h2>Projects</h2>
         </div>
+        <div id="Projects" className="spaceTwo"></div>
         <ProjectCardTwo
             title="MINDSHARE"
             description="This application is a smart and interactive journal, where you are given daily questions that allows an algorithm to analyze your responses 
@@ -51,12 +63,7 @@ function Home() {
             gitLink="https://github.com/P3TeamTwo/p3"
             siteLink="https://guarded-dusk-24354.herokuapp.com/"
 
-            //Since react-icons are functions they have to be passed individually to execute in the component, it will not accept them in an array.
-            html={FaHtml5()}
-            node={FaNodeJs()}
-            travis={SiTravisci()}
-            heroku={SiHeroku()}
-            react={FaReact()}
+            icons={[htmlImg, nodeImg, reactImg, herokuImg, travisImg]}
         />
 
         <ProjectCard
@@ -67,14 +74,9 @@ function Home() {
             image={LetsGoImg}
             gitLink="https://github.com/Mcilhaggis/lets-go-travel-planner"
             siteLink="https://stormy-springs-60842.herokuapp.com/"
+            icons={[htmlImg,nodeImg, travisImg, herokuImg, sqlImg, jestImg, javascriptImg]}
 
-            //Since react-icons are functions they have to be passed individually to execute in the component, it will not accept them in an array.
-            html={FaHtml5()}
-            node={FaNodeJs()}
-            travis={SiTravisci()}
-            heroku={SiHeroku()}
-            sql={SiMysql()}
-            jest={SiJest()}
+
         >
         </ProjectCard>
 
@@ -89,35 +91,33 @@ function Home() {
             image={FiveOclockImg}
             gitLink="https://github.com/nsuroghon/5-o-Clock-Somewhere"
             siteLink="https://nsuroghon.github.io/5-o-Clock-Somewhere/"
+            icons={[htmlImg, materialImg, javascriptImg]}
 
-            //Since react-icons are functions they have to be passed individually to execute in the component, it will not accept them in an array.
-            html={FaHtml5()}
-            materialize={DiMaterializecss()}
-            javascript={DiJavascript1()}
 
         />
 
 
         <ProjectCard
             title="Burger Logger"
-            description="A practice in coding, from scratch, a CRUD application with a fun twist. This application allows the user to input burgers they'd like to eat and switch them to consumed in another column. Then, they have the option to remove them from the list.
-    
-            This project solidified my understanding of the steps required to provide a complete functioning application connected to an SQL database using the handlebars framework to create a homemade ORM."
+            description="A practice in coding, from scratch, a CRUD application with Express, Handlebars, ORM, MVC design and Sequelize. This application allows the user to input burgers they'd like to eat and switch them to consumed in another column. Then, they have the option to remove them from the list.
+        
+            This project solidified my understanding of the steps required to provide a complete functioning application connected to mySQL database using the handlebars framework to create a homemade ORM."
             image={BurgerImg}
             gitLink="https://github.com/Mcilhaggis/burger-logger"
             siteLink="https://fast-ravine-10902.herokuapp.com/"
+            icons={[htmlImg, javascriptImg, nodeImg, sqlImg, sequelizeImg]}
 
-            //Since react-icons are functions they have to be passed individually to execute in the component, it will not accept them in an array.
-            html={FaHtml5()}
-            node={FaNodeJs()}
+
         />
 
-<ProjectCardTwo
-    title="Employee Directory"
-    description="Using React and randomuser.me API, this application is designed to allow users to filter their employees by any of the table headingS, as well as search for users by name and have the results immediately display, demonstrating how react can update the DOM without reloading the entire page."
-    image={EmployeeDirectoryImg}
-    gitLink="https://github.com/Mcilhaggis/employee-directory-react"
-    siteLink="https://mcilhaggis.github.io/employee-directory-react/" />
+        <ProjectCardTwo
+            title="Employee Directory"
+            description="Using React and randomuser.me API, this application is designed to allow users to filter their employees by any of the table headingS, as well as search for users by name and have the results immediately display, demonstrating how react can update the DOM without reloading the entire page."
+            image={EmployeeDirectoryImg}
+            gitLink="https://github.com/Mcilhaggis/employee-directory-react"
+            siteLink="https://mcilhaggis.github.io/employee-directory-react/" 
+            icons={[htmlImg, javascriptImg, reactImg]}
+            />
 
         <ProjectCard
             title="Recipe Finder"
@@ -125,11 +125,8 @@ function Home() {
             image={RecipeImg}
             gitLink="https://github.com/Mcilhaggis/recipe-finder-react"
             siteLink="https://guarded-badlands-10806.herokuapp.com/"
+            icons={[htmlImg, nodeImg, herokuImg, javascriptImg, reactImg]}
 
-            html={FaHtml5()}
-            node={FaNodeJs()}
-            heroku={SiHeroku()}
-            react={FaReact()}
 
         />
     </>
