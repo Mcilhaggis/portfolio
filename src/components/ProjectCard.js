@@ -25,7 +25,7 @@ function ProjectCard({ title, description, image,icons, gitLink, siteLink}) {
                     <p className="project-text mt-3 projectDescription">{description}</p>
 
                     {/* Container for logo icons of technologies and frameworks used */}
-                    <div className="d-flex justify-content-sm-around align-items-center mb-5 mt-4">
+                    <div className="d-flex justify-content-around align-items-center mb-5 mt-4">
                         
                     {icons.map(icon => {
                             return <img src={icon} alt="icon" className="icons"></img>

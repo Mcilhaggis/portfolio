@@ -51,7 +51,7 @@ h1, h2{
 
 .blob-two{
     height: 400px;
-    background-color: #a3d2ca;
+    background-color: rgb(220,101,86);
     border-radius: 44% 56% 56% 44% / 38% 68% 32% 62%;
     margin-top: 30%;
     animation: secondMorph 8s ease-in-out infinite;
